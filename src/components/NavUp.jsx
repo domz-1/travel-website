@@ -64,10 +64,10 @@ const NavUp = () => {
                                 <Typography variant="subtitle2">
                                     Lokasi
                                 </Typography>
-                                <Typography variant="subtitle1">
-                                    Indonesia, Yogyakarta
+                                <Stack>
+                                    <span>Indonesia, Yogyakarta</span>
                                     <ArrowDropDownRoundedIcon />
-                                </Typography>
+                                </Stack>
                             </div>
                         </div>
                     </Stack>
