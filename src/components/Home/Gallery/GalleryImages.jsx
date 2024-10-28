@@ -2,14 +2,22 @@ import Media from '../../../assets/media.png';
 import Media1 from '../../../assets/media1.png';
 import Media2 from '../../../assets/media2.jpg';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import { useTheme, useMediaQuery } from '@mui/material';
+
 const GalleryImages = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <div>
-            <div className="d-flex flex-row w-100 justify-content-between mb-3 gap-5">
+            <div
+                className={`d-flex ${
+                    isMobile ? 'flex-column' : 'flex-row'
+                } w-100 justify-content-between mb-3 gap-5 `}
+            >
                 <div
-                    className="card shadow-lg"
+                    className={`card shadow-lg `}
                     style={{
-                        width: '35%',
+                        width: isMobile ? '100%' : '35%',
                     }}
                 >
                     <img src={Media} className="card-img-top" alt="image" />
@@ -72,52 +80,55 @@ const GalleryImages = () => {
                     </div>
                 </div>
             </div>
-            <div className="media-2 position-relative w-100">
-                <img
-                    src={Media2}
-                    alt="picture"
-                    className="w-100 h-100 shadow-lg rounded-4"
-                />
-                <div
-                    className="text position-absolute ps-5 d-flex flex-column w-100 h-100 justify-content-end p-5"
-                    style={{
-                        bottom: '0',
-                        right: '0',
-                        color: 'white',
-                        backgroundColor: 'rgba(0,0,0,0.3)',
-                        padding: '10px',
-                        borderRadius: '5px',
-                        display: 'flex',
-                        cursor: 'pointer',
-                        transition: 'background-color 0.3s ease',
-                        zIndex: '2',
-                    }}
-                >
-                    <p
-                        className="fw-bold"
+            {isMobile || (
+                <div className="media-2 position-relative w-100">
+                    <img
+                        src={Media2}
+                        alt="picture"
+                        className="w-100 h-100 shadow-lg rounded-4"
+                    />
+
+                    <div
+                        className="text position-absolute ps-5 d-flex flex-column w-100 h-100 justify-content-end p-5"
                         style={{
-                            fontSize: '24px',
+                            bottom: '0',
+                            right: '0',
+                            color: 'white',
+                            backgroundColor: 'rgba(0,0,0,0.3)',
+                            padding: '10px',
+                            borderRadius: '5px',
+                            display: 'flex',
+                            cursor: 'pointer',
+                            transition: 'background-color 0.3s ease',
+                            zIndex: '2',
                         }}
                     >
-                        Tips meminum air kawah biar lidah melepuh 😁
-                    </p>
-                    <p
-                        className=""
-                        style={{
-                            fontSize: '16px',
-                        }}
-                    >
-                        Lidah melepuh? why nott, kawah bukan untuk dilihat
-                        kawan.. tapi untuk di minum.. rasakan kepanasan yang
-                        brutal 🔥
-                    </p>
-                    <div className="d-flex flex-row gap-5 mt-3">
-                        <p>Baru</p>
-                        <p>Trending</p>
-                        <p>Google</p>
+                        <p
+                            className="fw-bold"
+                            style={{
+                                fontSize: '24px',
+                            }}
+                        >
+                            Tips meminum air kawah biar lidah melepuh 😁
+                        </p>
+                        <p
+                            className=""
+                            style={{
+                                fontSize: '16px',
+                            }}
+                        >
+                            Lidah melepuh? why nott, kawah bukan untuk dilihat
+                            kawan.. tapi untuk di minum.. rasakan kepanasan yang
+                            brutal 🔥
+                        </p>
+                        <div className="d-flex flex-row gap-5 mt-3">
+                            <p>Baru</p>
+                            <p>Trending</p>
+                            <p>Google</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 };

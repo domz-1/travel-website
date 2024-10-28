@@ -1,15 +1,25 @@
 import LastImg from '../../../assets/last.png';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import { useTheme, useMediaQuery } from '@mui/material';
 const Last = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const isSMobile = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <div
-            className="w-100 d-flex flex-row rounded-4 justify-content-between my-5"
+            className={`w-100 d-flex ${
+                isMobile ? 'flex-column-reverse' : 'flex-row'
+            } rounded-4 justify-content-between my-5`}
             style={{
                 backgroundColor: '#4372EB',
-                height: '378px',
+                height: isMobile ? 'auto' : '378px',
             }}
         >
-            <div className="text text-white p-5 d-flex flex-column justify-content-around w-50 fw-bold">
+            <div
+                className={`text text-white p-5 d-flex flex-column justify-content-around ${
+                    isMobile ? 'w-100' : 'w-50'
+                } fw-bold`}
+            >
                 <h1>Masih bingung cari tempat yang cocok? 🤔</h1>
                 <p className="text-white-50">
                     Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
@@ -21,7 +31,7 @@ const Last = () => {
                     <ArrowForwardRoundedIcon />
                 </p>
             </div>
-            <img src={LastImg} alt="" className="" />
+            {isMobile ? null : <img src={LastImg} alt="" className="" />}
         </div>
     );
 };

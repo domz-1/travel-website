@@ -1,6 +1,13 @@
+import { useTheme, useMediaQuery } from '@mui/material';
+
 const Emotion = (props) => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div className="d-flex flex-row w-75 align-items-center my-5">
+        <div
+            className={`d-flex flex-row 
+                ${isMobile ? 'w-100' : 'w-75'} align-items-center my-5`}
+        >
             <p
                 className="rounded-3 shadow-sm"
                 style={{
@@ -11,6 +18,7 @@ const Emotion = (props) => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     fontSize: '24px',
+                    marginLeft: isMobile ? '30px' : '0',
                 }}
             >
                 {props.emoji}

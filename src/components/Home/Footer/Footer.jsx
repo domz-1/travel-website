@@ -3,11 +3,19 @@ import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
 import LocalPrintshopRoundedIcon from '@mui/icons-material/LocalPrintshopRounded';
+import { useTheme, useMediaQuery } from '@mui/material';
+
 const Footer = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <div className="wrapper pt-5 my-5 ">
             <img src={icon} alt="" className="my-3" />
-            <div className="d-flex flex-lg-row justify-content-between gap-4">
+            <div
+                className={`d-flex ${
+                    isMobile ? 'flex-column' : 'flex-row'
+                } justify-content-between gap-4`}
+            >
                 <div className="right d-flex flex-column gap-4 justify-content-between">
                     <p>Destinize</p>
                     <p>

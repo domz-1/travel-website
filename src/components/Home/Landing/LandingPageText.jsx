@@ -1,12 +1,28 @@
 import { Button, Chip } from '@mui/material';
 import { Typography } from '@mui/material';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import { useTheme, useMediaQuery } from '@mui/material';
 const LandingPageText = () => {
+    const theme = useTheme();
+    const isSmallMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
     return (
-        <div className="d-flex flex-column">
+        <div
+            className="d-flex flex-column w-auto flex-shrink-1"
+            style={{
+                textWrap: 'wrap',
+                margin: '0 auto',
+                maxWidth: '500px',
+                padding: '20px',
+                textAlign: isMobile ? 'center' : 'start',
+                justifyContent: 'center',
+                alignItems: isMobile ? 'center' : 'start',
+            }}
+        >
             <Chip
                 label="🛩 • Explore the wonderful indonesia!"
-                className="chip w-25"
+                className={`chip1 ${isMobile ? 'w-75' : 'w-50'}`}
                 variant="filled"
                 size="medium"
             />
@@ -15,7 +31,8 @@ const LandingPageText = () => {
                 sx={{
                     color: '#181E4B',
                     fontWeight: 'bold',
-                    fontSize: '76px',
+                    fontSize: isMobile ? '2rem' : '76px',
+                    textWrap: isMobile && 'wrap',
                 }}
             >
                 Liburan & nikmati
@@ -23,7 +40,7 @@ const LandingPageText = () => {
                     style={{
                         color: '#367cf5',
                         fontWeight: 'bold',
-                        fontSize: '76px',
+                        fontSize: isMobile ? '2rem' : '76px',
                     }}
                 >
                     tempat baru

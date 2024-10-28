@@ -4,6 +4,42 @@
     margin: 0 !important;
 }
 
+$breakpoint-xs: 0px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1536px;
+
+@mixin xs {
+    @media (max-width: #{$breakpoint-xs}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$breakpoint-md}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
+
 .linkandarrow {
     display: flex;
     align-items: center;
@@ -108,17 +144,33 @@
     padding-left: 65px !important;
     padding-right: 65px !important;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include md {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 100px;
+    }
 
     .links {
         display: flex;
         flex-direction: row;
         gap: 10px;
+
+        @include md {
+            flex-direction: column;
+            gap: 15px;
+        }
     }
 
     .btns {
         display: flex;
         flex-direction: row;
         gap: 10px;
+
 
         .person {
 
@@ -141,6 +193,20 @@
     }
 }
 
+.man-landing-photo {
+    @include md {
+        width: 70%;
+        height: 70%;
+        margin-top: 72px;
+    }
+
+    @include sm {
+        margin-top: 50px;
+        width: 70%;
+        height: 70%;
+    }
+}
+
 .chip {
     color: #4475F2 !important;
     background-color: #E3EBFD !important;
@@ -150,12 +216,18 @@
 .landing-wrapper {
     margin-top: 130px !important;
     margin-bottom: 50px !important;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    height: 81vh;
+
+    @include md {
+        flex-direction: column-reverse;
+        gap: 15px;
+        height: auto;
+        margin-top: 72px !important;
+    }
 }
 
 .landing-btns {
@@ -178,7 +250,14 @@
     justify-content: space-between;
     margin-top: 60px !important;
     margin-bottom: 50px !important;
-    max-height: 100px;
+    min-height: 100px;
+
+    @include md {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
     img.photo-gray {
         // max-height: 100px;
@@ -202,14 +281,37 @@
     justify-content: space-between !important;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     margin-top: 30px !important;
+
+    @include md {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .country-card {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 278.46px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    @include md {
+        width: 100%;
+        height: 100%;
+    }
 
     .img {
         border-radius: 20px;
@@ -219,6 +321,7 @@
     }
 
     .sub-text {
+
 
         p {
             font-size: 17px;
@@ -240,6 +343,19 @@
         bottom: 0;
         left: 0;
         right: 0;
+
+        @include md {
+            background: transparent;
+        }
+
+        @include sm {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 90px;
+            margin-top: 10px;
+        }
+
         background-color: #ffffffaf;
         color: black;
         border-radius: 0 12px 0 0;
@@ -255,16 +371,17 @@
     margin-top: 40px !important;
     margin-bottom: 15px !important;
 
+    @include md() {
+        padding: 50px;
+    }
+
     p {
         &.title {
             font-size: 18px;
             color: #4475F2 !important;
-            ;
             font-weight: bold;
             padding-left: 30px !important;
         }
-
-
     }
 
     .fav-sub,
@@ -276,5 +393,10 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
+
+        @include md {
+
+            padding-left: 30px !important;
+        }
     }
 }

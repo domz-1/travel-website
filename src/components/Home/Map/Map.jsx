@@ -1,10 +1,13 @@
 import MapImg from '../../../assets/Base.png';
 import MapDownSection from './MapDownSection';
 import MapRoundedIcon from '@mui/icons-material/MapRounded';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const Map = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div className="d-flex flex-column gap-4 mb-5">
+        <div className="d-flex flex-column gap-4 mb-5 justify-content-center align-content-center">
             <p
                 className="px-2 fw-bold text-center"
                 style={{
@@ -28,7 +31,21 @@ const Map = () => {
                 di daerah kamu dengan begitu kamu akan selalu update dan gak
                 kudet lagi 👍🏻
             </p>
-            <img src={MapImg} alt="map" />
+            <img
+                src={MapImg}
+                alt="map"
+                className="flex-shrink-1"
+                style={{
+                    maxWidth: '100%',
+                    height: isMobile ? '200px' : 'auto',
+                    objectFit: 'cover',
+                    borderRadius: '10px',
+                    border: '1px solid #F0F0F0',
+                    boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.1)',
+                    marginBottom: '20px',
+                    margin: 'auto',
+                }}
+            />
             <MapDownSection />
         </div>
     );

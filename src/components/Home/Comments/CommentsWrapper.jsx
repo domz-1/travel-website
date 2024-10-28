@@ -3,10 +3,18 @@ import CardComment from './CardComment';
 import User1 from '../../../assets/use1.png';
 import User2 from '../../../assets/user2.png';
 import User3 from '../../../assets/user3.png';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const CommentsWrapper = () => {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div className="d-flex flex-row w-100 justify-content-between">
+        <div
+            className={`d-flex ${
+                isMobile ? 'flex-column' : 'flex-row'
+            } w-100 justify-content-between
+             align-items-center gap-4`}
+        >
             <CardComment
                 img={User1}
                 username="Sandhika Galih"

@@ -6,8 +6,9 @@ const CardComment = (props) => {
         <div
             className="comment-card d-flex flex-column justify-content-evenly align-items-center shadow-lg rounded-3 p-3"
             style={{
+                flexShrink: '1',
                 width: '400px',
-                height: '450px',
+                maxHeight: '450px',
                 padding: '20px',
                 backgroundColor: '#fff',
                 boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',

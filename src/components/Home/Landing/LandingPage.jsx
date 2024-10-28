@@ -4,7 +4,11 @@ const LandingPage = () => {
     return (
         <div className="landing-wrapper">
             <LandingPageText />
-            <img src={ManPhoto} alt="" />
+            <img
+                src={ManPhoto}
+                alt=""
+                className="man-landing-photo flex-shrink-1"
+            />
         </div>
     );
 };
