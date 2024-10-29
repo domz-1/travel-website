@@ -1,3 +1,4 @@
+import { Emoji } from 'react-apple-emojis';
 import Photo from '../../../assets/Image.png';
 import Emotion from './Emotion';
 import { useTheme, useMediaQuery } from '@mui/material';
@@ -28,20 +29,24 @@ const Reserv = () => {
                     }}
                     className="fw-bold text-wrap w-75"
                 >
-                    Gak mau ngantri? Reservasi aja! 🤙🏻
+                    Gak mau ngantri? Reservasi aja!{' '}
+                    <Emoji
+                        name="call-me-hand-light-skin-tone"
+                        className="section-emoji"
+                    />
                 </h1>
                 <Emotion
-                    emoji="🔍"
+                    emojiName="magnifying-glass-tilted-left"
                     description="Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize"
                     title="Cari tempat yang kamu mau"
                 />
                 <Emotion
-                    emoji="📕"
+                    emojiName="pencil"
                     description="Tulis dan lengkapi data kamu untuk keperluan data booking"
                     title="Isi data dan konfirmasi pembayaran"
                 />
                 <Emotion
-                    emoji="😍"
+                    emojiName="smiling-face-with-heart-eyes"
                     description="Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan"
                     title="Tinggal masuk dan enjoy!"
                 />

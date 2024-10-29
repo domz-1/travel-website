@@ -21,7 +21,7 @@ import { useState } from 'react';
 import Logo from '../../../assets/Logo.png';
 import NavDown from './NavDown';
 
-const NavUp = () => {
+const Navbar = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -193,4 +193,4 @@ const NavUp = () => {
     );
 };
 
-export default NavUp;
+export default Navbar;

@@ -1,4 +1,5 @@
 import CommentsWrapper from './CommentsWrapper';
+import { Emoji } from 'react-apple-emojis';
 
 const Comments = () => {
     return (
@@ -18,7 +19,8 @@ const Comments = () => {
                 }}
                 className="fw-bold text-wrap text-center"
             >
-                💬 • Apa Kata Mereka Tentang Kami
+                <Emoji name="speech-balloon" className="section-emoji" /> • Apa
+                Kata Mereka Tentang Kami
             </h1>
             <p className="text-center text-wrap w-75">
                 Penasaran apa saja review dari pengguna yang memakai aplikasi

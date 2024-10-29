@@ -10,10 +10,10 @@ const CommentsWrapper = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <div
-            className={`d-flex ${
-                isMobile ? 'flex-column' : 'flex-row'
-            } w-100 justify-content-between
-             align-items-center gap-4`}
+            className={`d-flex 
+            ${isMobile ? 'flex-column' : 'flex-row'}
+            w-100 justify-content-between
+            align-items-center gap-4 fw-bold`}
         >
             <CardComment
                 img={User1}

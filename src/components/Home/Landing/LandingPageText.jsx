@@ -2,6 +2,8 @@ import { Button, Chip } from '@mui/material';
 import { Typography } from '@mui/material';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import { useTheme, useMediaQuery } from '@mui/material';
+import { Emoji } from 'react-apple-emojis';
+
 const LandingPageText = () => {
     const theme = useTheme();
     const isSmallMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -9,11 +11,11 @@ const LandingPageText = () => {
 
     return (
         <div
-            className="d-flex flex-column w-auto flex-shrink-1"
+            className="d-flex flex-column  flex-shrink-1"
             style={{
                 textWrap: 'wrap',
-                margin: '0 auto',
-                maxWidth: '500px',
+                margin: '0',
+                // maxWidth: '500px',
                 padding: '20px',
                 textAlign: isMobile ? 'center' : 'start',
                 justifyContent: 'center',
@@ -21,7 +23,7 @@ const LandingPageText = () => {
             }}
         >
             <Chip
-                label="🛩 • Explore the wonderful indonesia!"
+                label={`🛫• Explore the wonderful indonesia!`}
                 className={`chip1 ${isMobile ? 'w-75' : 'w-50'}`}
                 variant="filled"
                 size="medium"
@@ -36,6 +38,7 @@ const LandingPageText = () => {
                 }}
             >
                 Liburan & nikmati
+                <br />
                 <span
                     style={{
                         color: '#367cf5',
@@ -47,7 +50,13 @@ const LandingPageText = () => {
                 </span>
                 di
                 <br />
-                indonesia 🌱
+                indonesia{' '}
+                <Emoji
+                    name="desert-island"
+                    style={{
+                        width: isMobile ? '2rem' : '89px',
+                    }}
+                />
             </Typography>
             <Typography
                 sx={{
@@ -55,11 +64,17 @@ const LandingPageText = () => {
                     fontSize: '1rem',
                     fontWeight: '500',
                 }}
-                className="w-75 text-wrap my-2"
+                className="w-50 text-wrap my-2"
             >
                 Destinize membuat kamu selalu update terkait tempat liburan baru
                 di Indonesia dengan mengikuti perkembangan para influencer di
-                sosial media ✨
+                sosial media{' '}
+                <Emoji
+                    name="sparkles"
+                    style={{
+                        width: '1rem',
+                    }}
+                />
             </Typography>
             <div className="landing-btns">
                 <Button
@@ -69,6 +84,9 @@ const LandingPageText = () => {
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
                         borderRadius: '10px',
+                        width: '200',
+                        height: '60px',
+                        fontSize: '1rem',
                     }}
                 >
                     Mulai sekarang →
@@ -77,17 +95,22 @@ const LandingPageText = () => {
                     className="
                 d-flex align-items-center
                 gap-2"
+                    style={{
+                        fontSize: '1rem',
+                    }}
                 >
                     <PlayArrowRoundedIcon
                         sx={{
                             color: '#4475F2',
+                            width: '50px',
+                            height: '50px',
                             borderRadius: '50%',
                             outline: '1px solid #4475F2',
-                            padding: '5px',
+                            // padding: '5px',
                             boxShadow: '1px 1px 10px 1px #4475F2',
                         }}
                     />
-                    lorem
+                    <p className="fw-bold">Putar Demo </p>
                 </div>
             </div>
         </div>

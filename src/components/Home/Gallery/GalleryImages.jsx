@@ -3,6 +3,7 @@ import Media1 from '../../../assets/media1.png';
 import Media2 from '../../../assets/media2.jpg';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import { useTheme, useMediaQuery } from '@mui/material';
+import { Emoji } from 'react-apple-emojis';
 
 const GalleryImages = () => {
     const theme = useTheme();
@@ -26,7 +27,17 @@ const GalleryImages = () => {
                             26 DESEMBER 2021
                         </p>
                         <p className="fw-bold 1875rem py-2">
-                            Tips naik gunung Bromo Biar gak capek cyin 😥😛
+                            Tips naik gunung Bromo Biar gak capek cyin{' '}
+                            <Emoji
+                                name="beaming-face-with-smiling-eyes"
+                                size="24px"
+                                style={{ width: '16px' }}
+                            />
+                            <Emoji
+                                name="face-with-tongue"
+                                size="24px"
+                                style={{ width: '16px' }}
+                            />
                         </p>
                         <p className="fw-bold text-black-50 card-text py-2">
                             Some quick example text to build on the card title
@@ -109,7 +120,12 @@ const GalleryImages = () => {
                                 fontSize: '24px',
                             }}
                         >
-                            Tips meminum air kawah biar lidah melepuh 😁
+                            Tips meminum air kawah biar lidah melepuh{' '}
+                            <Emoji
+                                name="sad-but-relieved-face"
+                                size="24px"
+                                style={{ width: '25px' }}
+                            />
                         </p>
                         <p
                             className=""
@@ -119,7 +135,12 @@ const GalleryImages = () => {
                         >
                             Lidah melepuh? why nott, kawah bukan untuk dilihat
                             kawan.. tapi untuk di minum.. rasakan kepanasan yang
-                            brutal 🔥
+                            brutal{' '}
+                            <Emoji
+                                name="fire"
+                                size="24px"
+                                style={{ width: '16px' }}
+                            />
                         </p>
                         <div className="d-flex flex-row gap-5 mt-3">
                             <p>Baru</p>

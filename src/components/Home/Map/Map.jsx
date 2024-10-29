@@ -1,7 +1,7 @@
 import MapImg from '../../../assets/Base.png';
 import MapDownSection from './MapDownSection';
-import MapRoundedIcon from '@mui/icons-material/MapRounded';
 import { useTheme, useMediaQuery } from '@mui/material';
+import { Emoji } from 'react-apple-emojis';
 
 const Map = () => {
     const theme = useTheme();
@@ -23,7 +23,8 @@ const Map = () => {
                 }}
                 className="fw-bold text-wrap text-center"
             >
-                <MapRoundedIcon /> • Cari Tempat Wisata Didekatmu
+                <Emoji name="world-map" className="section-emoji" /> • Cari
+                Tempat Wisata Didekatmu
             </h1>
             <p className="text-center text-wrap">
                 Fitur ini memungkinkan kamu untuk mencari tempat wisata atau

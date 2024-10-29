@@ -1,14 +1,12 @@
-import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
+import { Emoji } from 'react-apple-emojis';
 
 const CollapsItems = () => {
     return (
-        <div>
+        <div className="fw-bold">
             <Accordion>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -16,7 +14,11 @@ const CollapsItems = () => {
                     id="panel1-header"
                     className="p-4"
                 >
-                    Kenapa ya pembayaranku gagal banh? 😁{' '}
+                    Kenapa ya pembayaranku gagal banh?
+                    <Emoji
+                        name="beaming-face-with-smiling-eyes"
+                        style={{ width: '20px', height: '20px' }}
+                    />
                 </AccordionSummary>
                 <AccordionDetails
                     className="p-4"
@@ -38,7 +40,19 @@ const CollapsItems = () => {
                     id="panel2-header"
                     className="p-4"
                 >
-                    Apakah rehan wangsaff adalah CEO dari Destinize? 😅😅😅{' '}
+                    Apakah rehan wangsaff adalah CEO dari Destinize?
+                    <Emoji
+                        name="grinning-face-with-sweat"
+                        style={{ width: '20px', height: '20px' }}
+                    />
+                    <Emoji
+                        name="grinning-face-with-sweat"
+                        style={{ width: '20px', height: '20px' }}
+                    />
+                    <Emoji
+                        name="grinning-face-with-sweat"
+                        style={{ width: '20px', height: '20px' }}
+                    />
                 </AccordionSummary>
                 <AccordionDetails
                     className="p-4"
@@ -83,7 +97,11 @@ const CollapsItems = () => {
                     id="panel3-header"
                     className="p-4"
                 >
-                    Apa rekomendasi tempat buat orang yang jomblo? 😥
+                    Apa rekomendasi tempat buat orang yang jomblo?{' '}
+                    <Emoji
+                        name="sad-but-relieved-face"
+                        style={{ width: '20px', height: '20px' }}
+                    />
                 </AccordionSummary>
                 <AccordionDetails
                     className="p-4"
@@ -105,7 +123,11 @@ const CollapsItems = () => {
                     id="panel3-header"
                     className="p-4"
                 >
-                    Apa rekomendasi tempat buat orang yang jomblo? 😥
+                    Apa rekomendasi tempat buat orang yang jomblo?{' '}
+                    <Emoji
+                        name="sad-but-relieved-face"
+                        style={{ width: '20px', height: '20px' }}
+                    />
                 </AccordionSummary>
                 <AccordionDetails
                     className="p-4"

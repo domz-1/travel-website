@@ -1,6 +1,7 @@
 import LastImg from '../../../assets/last.png';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import { useTheme, useMediaQuery } from '@mui/material';
+import { Emoji } from 'react-apple-emojis';
 const Last = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -20,7 +21,10 @@ const Last = () => {
                     isMobile ? 'w-100' : 'w-50'
                 } fw-bold`}
             >
-                <h1>Masih bingung cari tempat yang cocok? 🤔</h1>
+                <h1>
+                    Masih bingung cari tempat yang cocok?{' '}
+                    <Emoji name="thinking-face" className="section-emoji" />
+                </h1>
                 <p className="text-white-50">
                     Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
                     mencari tempat berlibur yang tepat dengan menjawab

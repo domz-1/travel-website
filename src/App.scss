@@ -219,7 +219,7 @@ $breakpoint-xl: 1536px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 81vh;
 
     @include md {
@@ -238,7 +238,7 @@ $breakpoint-xl: 1536px;
 
     button {
         margin: 10px !important;
-        padding: 5px !important;
+        padding: 0 10px !important;
     }
 }
 
@@ -362,8 +362,17 @@ $breakpoint-xl: 1536px;
     }
 }
 
+.section-emoji {
+    width: 50px !important;
+    margin-right: 10px !important;
+}
+
 .fav-wrapper,
 .section-wrapper {
+    h1 {
+        font-weight: bold;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -374,6 +383,7 @@ $breakpoint-xl: 1536px;
     @include md() {
         padding: 50px;
     }
+
 
     p {
         &.title {
@@ -386,6 +396,9 @@ $breakpoint-xl: 1536px;
 
     .fav-sub,
     .section-sub {
+        .section-emoji {
+            width: inherit();
+        }
 
         display: flex;
         flex-direction: row;
@@ -395,7 +408,6 @@ $breakpoint-xl: 1536px;
         margin-bottom: 10px;
 
         @include md {
-
             padding-left: 30px !important;
         }
     }

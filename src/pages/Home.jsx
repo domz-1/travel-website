@@ -1,4 +1,4 @@
-import NavUp from '../components/Home/Navbar/NavUp';
+import Navbar from '../components/Home/Navbar/Navbar';
 import LandingPage from '../components/Home/Landing/LandingPage';
 import Sponsors from '../components/Home/Sponsor/Sponsors';
 import Favourite from '../components/Home/countries/Favourite';
@@ -13,7 +13,7 @@ import Footer from '../components/Home/Footer/Footer';
 const Home = () => {
     return (
         <div className="home container flex-column justify-center">
-            <NavUp />
+            <Navbar />
             <LandingPage />
             <Sponsors />
             <Favourite />

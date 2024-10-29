@@ -17,26 +17,30 @@ const Footer = () => {
                 } justify-content-between gap-4`}
             >
                 <div className="right d-flex flex-column gap-4 justify-content-between">
-                    <p>Destinize</p>
-                    <p>
+                    <p className="fw-bold text-black">Destinize</p>
+                    <p className="text-black-50">
                         Destinize adalah website atau layanan aplikasi yang
                         membantu kamu memilih atau merekomendasikan tempat yang
                         dijuluki ‘hidden gems’ agar lebih dikenal dan ramai Baca
                         Selengkapnya
                     </p>
-                    <p>
+                    <p className="text-black-50">
+                        {' '}
                         <CallRoundedIcon />
                         0851-5616-2840
                     </p>
-                    <p>
+                    <p className="text-black-50">
+                        {' '}
                         <EmailRoundedIcon />
                         syaokay@gmail.com
                     </p>
-                    <p>
+                    <p className="text-black-50">
+                        {' '}
                         <LocationOnRoundedIcon />
                         Ciamis, Jawa Barat. Indonesia
                     </p>
-                    <p>
+                    <p className="text-black-50">
+                        {' '}
                         <LocalPrintshopRoundedIcon />
                         +1-212-9876543
                     </p>
@@ -44,44 +48,46 @@ const Footer = () => {
                 <div className="left d-flex flex-row gap-3 justify-content-between w-100">
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
-                        <p>Pekerjaan</p>
-                        <p>Karir</p>
-                        <p>Blog</p>
-                        <p>Tentang Kami</p>
-                        <p>somp</p>
-                        <p>Ekd</p>
-                        <p>Gsio</p>
-                    </div>
-                    <div className="one d-flex flex-column gap-2 ">
-                        <p className="fw-bold text-black">Tentang</p>
-                        <p>Pekerjaan</p>
-                        <p>Karir</p>
-                        <p>Blog</p>
-                        <p>Tentang Kami</p>
-                        <p>somp</p>
-                        <p>Ekd</p>
-                        <p>Gsio</p>
+                        <p className="text-black-50">Pekerjaan</p>
+                        <p className="text-black-50">Karir</p>
+                        <p className="text-black-50">Blog</p>
+                        <p className="text-black-50">Tentang Kami</p>
+                        <p className="text-black-50">somp</p>
+                        <p className="text-black-50">Ekd</p>
+                        <p className="text-black-50">Gsio</p>
                     </div>
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
-                        <p>Pekerjaan</p>
-                        <p>Karir</p>
-                        <p>Blog</p>
-                        <p>Tentang Kami</p>
-                        <p>somp</p>
-                        <p>Ekd</p>
-                        <p>Gsio</p>
+                        <p className="text-black-50">Pekerjaan</p>
+                        <p className="text-black-50">Karir</p>
+                        <p className="text-black-50">Blog</p>
+                        <p className="text-black-50">Tentang Kami</p>
+                        <p className="text-black-50">somp</p>
+                        <p className="text-black-50">Ekd</p>
+                        <p className="text-black-50">Gsio</p>
+                    </div>
+                    <div className="one d-flex flex-column gap-2">
+                        <p className="fw-bold text-black">Tentang</p>
+                        <p className="text-black-50">Pekerjaan</p>
+                        <p className="text-black-50">Karir</p>
+                        <p className="text-black-50">Blog</p>
+                        <p className="text-black-50">Tentang Kami</p>
+                        <p className="text-black-50">somp</p>
+                        <p className="text-black-50">Ekd</p>
+                        <p className="text-black-50">Gsio</p>
                     </div>
                 </div>
             </div>
             <br />
             <div className="down d-flex justify-content-between">
-                <p className="">&copy; 2023 Destinize. All rights reserved.</p>
+                <p className="text-black-50 fw-bold">
+                    &copy; 2023 Destinize. All rights reserved.
+                </p>
                 <div className="social d-flex gap-4">
-                    <p>Facebook</p>
-                    <p>Instagram</p>
-                    <p>Twitter</p>
-                    <p>LinkedIn</p>
+                    <p className="text-black-50 fw-bold">Facebook</p>
+                    <p className="text-black-50 fw-bold">Instagram</p>
+                    <p className="text-black-50 fw-bold">Twitter</p>
+                    <p className="text-black-50 fw-bold">LinkedIn</p>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ const CardComment = (props) => {
             style={{
                 flexShrink: '1',
                 width: '400px',
-                maxHeight: '450px',
+                minHeight: '450px',
                 padding: '20px',
                 backgroundColor: '#fff',
                 boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
@@ -25,7 +25,7 @@ const CardComment = (props) => {
                     objectFit: 'cover',
                 }}
             />
-            <p>{props.comment}</p>
+            <p className="px-3 text-center">{props.comment}</p>
             <Rating
                 name="simple-controlled"
                 value={rate}
