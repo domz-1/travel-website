@@ -1,78 +1,38 @@
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Emoji } from 'react-apple-emojis';
+import CollapseItem from './CollapseItem';
 
 const CollapsItems = () => {
     return (
-        <div className="fw-bold">
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    className="p-4"
-                >
-                    Kenapa ya pembayaranku gagal banh?
-                    <Emoji
-                        name="beaming-face-with-smiling-eyes"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                </AccordionSummary>
-                <AccordionDetails
-                    className="p-4"
-                    style={{
-                        backgroundColor: '#EBEBEB',
-                        padding: '16px',
-                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.05)',
-                    }}
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                </AccordionDetails>
-            </Accordion>
-            <Accordion defaultExpanded>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                    className="p-4"
-                >
-                    Apakah rehan wangsaff adalah CEO dari Destinize?
-                    <Emoji
-                        name="grinning-face-with-sweat"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                    <Emoji
-                        name="grinning-face-with-sweat"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                    <Emoji
-                        name="grinning-face-with-sweat"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                </AccordionSummary>
-                <AccordionDetails
-                    className="p-4"
-                    style={{
-                        backgroundColor: '#EBEBEB',
-                        padding: '16px',
-                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.05)',
-                    }}
-                >
-                    <p
-                        className="py-3 px-3"
-                        style={{
-                            borderLeft: '3px solid #23A6F0',
-                            fontWeight: 'bold',
-                            color: '#23A6F0',
-                        }}
-                    >
-                        Kenapa harus memilih Destinize?
-                    </p>
-                    Lorem Ipsum is simply dummy text of the printing and
+        <div
+            className="fw-bold"
+            style={{
+                boxShadow: '0px 2.77px 2.21px 0px rgba(191, 191, 191, 0.02);',
+                boxShadow: '0px 6.65px 5.32px 0px rgba(191, 191, 191, 0.03)',
+
+                // box-shadow: 0px 12.52px 10.02px 0px rgba(191, 191, 191, 0.04);
+
+                // box-shadow: 0px 22.34px 17.87px 0px rgba(191, 191, 191, 0.04);
+
+                // box-shadow: 0px 41.78px 33.42px 0px rgba(191, 191, 191, 0.05);
+
+                // box-shadow: 0px 100px 80px 0px rgba(191, 191, 191, 0.07);
+            }}
+        >
+            <CollapseItem
+                title={`Kenapa ya pembayaranku gagal banh? 😁`}
+                content="This is the detailed content for the accordion."
+                isOpened={false}
+            />
+            <CollapseItem
+                title={`Apakah rehan wangsaff adalah CEO dari Destinize?😅😅😅`}
+                content="Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s"
+                isOpened={false}
+            />
+            <CollapseItem
+                title={`Kenapa harus memilih Destinize?`}
+                content="Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
@@ -87,61 +47,25 @@ const CollapsItems = () => {
                     typesetting, remaining essentially unchanged. Lorem Ipsum is
                     simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, wh
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3-content"
-                    id="panel3-header"
-                    className="p-4"
-                >
-                    Apa rekomendasi tempat buat orang yang jomblo?{' '}
-                    <Emoji
-                        name="sad-but-relieved-face"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                </AccordionSummary>
-                <AccordionDetails
-                    className="p-4"
-                    style={{
-                        backgroundColor: '#EBEBEB',
-                        padding: '16px',
-                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.05)',
-                    }}
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3-content"
-                    id="panel3-header"
-                    className="p-4"
-                >
-                    Apa rekomendasi tempat buat orang yang jomblo?{' '}
-                    <Emoji
-                        name="sad-but-relieved-face"
-                        style={{ width: '20px', height: '20px' }}
-                    />
-                </AccordionSummary>
-                <AccordionDetails
-                    className="p-4"
-                    style={{
-                        backgroundColor: '#EBEBEB',
-                        padding: '16px',
-                        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.05)',
-                    }}
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                </AccordionDetails>
-            </Accordion>
+                    since the 1500s, wh"
+                isOpened={true}
+            />
+            <CollapseItem
+                title={`Afa iyah bang? Gapeduli 👆🏻😅`}
+                content="Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s"
+                isOpened={false}
+            />
+            <CollapseItem
+                title={`Apa rekomendasi tempat buat orang yang jomblo? 😥`}
+                content="Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s"
+                isOpened={false}
+            />
         </div>
     );
 };

@@ -13,7 +13,10 @@ const CommentsWrapper = () => {
             className={`d-flex 
             ${isMobile ? 'flex-column' : 'flex-row'}
             w-100 justify-content-between
-            align-items-center gap-4 fw-bold`}
+            align-items-center fw-bold`}
+            style={{
+                gap: '50px',
+            }}
         >
             <CardComment
                 img={User1}

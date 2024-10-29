@@ -8,6 +8,7 @@ const LandingPageText = () => {
     const theme = useTheme();
     const isSmallMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const di = ` di`;
 
     return (
         <div
@@ -15,21 +16,23 @@ const LandingPageText = () => {
             style={{
                 textWrap: 'wrap',
                 margin: '0',
-                // maxWidth: '500px',
                 padding: '20px',
                 textAlign: isMobile ? 'center' : 'start',
                 justifyContent: 'center',
                 alignItems: isMobile ? 'center' : 'start',
+                maxWidth: '660px',
             }}
         >
             <Chip
                 label={`🛫• Explore the wonderful indonesia!`}
-                className={`chip1 fw-bold ${isMobile ? 'w-75' : 'w-50'}`}
+                className={`chip1 fw-bold`}
                 variant="filled"
                 size="medium"
                 style={{
+                    width: 'max-content',
                     backgroundColor: '#E5EDFF',
                     color: '#4F7DF3',
+                    width: 299,
                 }}
             />
             <Typography
@@ -52,9 +55,9 @@ const LandingPageText = () => {
                 >
                     tempat baru
                 </span>
-                di
+                &nbsp; di
                 <br />
-                indonesia{' '}
+                indonesia
                 <Emoji
                     name="desert-island"
                     style={{
@@ -92,9 +95,10 @@ const LandingPageText = () => {
                         fontWeight: 'bold',
                         textTransform: 'uppercase',
                         borderRadius: '10px',
-                        width: '200',
+                        width: '198px',
                         height: '60px',
-                        fontSize: '1rem',
+                        fontSize: '16px',
+                        boxShadow: '0px 20px 35px 0px #4475F236',
                     }}
                 >
                     Mulai sekarang →
@@ -102,19 +106,20 @@ const LandingPageText = () => {
                 <div
                     className="
                 d-flex align-items-center
-                gap-2"
+                gap-3"
                     style={{
                         fontSize: '1rem',
                     }}
                 >
                     <PlayArrowRoundedIcon
+                        className="playback"
                         sx={{
                             color: '#4475F2',
                             width: '50px',
                             height: '50px',
                             borderRadius: '50%',
                             outline: '1px solid #4475F2',
-                            boxShadow: '1px 1px 10px 1px #4475F2',
+                            boxShadow: '0px 15px 20px 0px #4475F233',
                         }}
                     />
                     <p className="fw-bold">Putar Demo </p>

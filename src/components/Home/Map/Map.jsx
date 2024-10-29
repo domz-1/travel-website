@@ -11,7 +11,7 @@ const Map = () => {
             <p
                 className="px-2 fw-bold text-center"
                 style={{
-                    color: '#4475F2',
+                    color: 'rgba(71, 55, 255, 1)',
                 }}
             >
                 RESERVASI TEMPAT

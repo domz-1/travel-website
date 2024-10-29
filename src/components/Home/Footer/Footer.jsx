@@ -10,9 +10,12 @@ const Footer = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <div
-            className={`wrapper text-wrap  pt-5 my-5   ${
+            className={`wrapper text-wrap  pt-5 my-5 mx-5   ${
                 isMobile ? 'flex-column w-75 mx-5' : 'flex-row w-100'
             }`}
+            style={{
+                fontWeight: 400,
+            }}
         >
             <img src={icon} alt="" className="my-3" />
             <div
@@ -23,10 +26,17 @@ const Footer = () => {
                 <div className="right d-flex flex-column gap-4 justify-content-between">
                     <p className="fw-bold text-black">Destinize</p>
                     <p className="text-black-50">
-                        Destinize adalah website atau layanan aplikasi yang
+                        Destinize adalah website atau layanan aplikasi yang{' '}
+                        <br />
                         membantu kamu memilih atau merekomendasikan tempat yang
-                        dijuluki ‘hidden gems’ agar lebih dikenal dan ramai Baca
-                        Selengkapnya
+                        dijuluki ‘hidden gems’ agar lebih dikenal dan ramai
+                        <span
+                            style={{
+                                color: 'rgb(68, 117, 242)',
+                            }}
+                        >
+                            Baca Selengkapnya
+                        </span>
                     </p>
                     <p className="text-black-50">
                         {' '}
@@ -49,7 +59,7 @@ const Footer = () => {
                         +1-212-9876543
                     </p>
                 </div>
-                <div className="left d-flex flex-row gap-3 justify-content-between w-100">
+                <div className="left d-flex flex-row justify-content-evenly w-100">
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
                         <p className="text-black-50">Pekerjaan</p>
@@ -84,20 +94,23 @@ const Footer = () => {
             </div>
             <br />
             <div
-                className={`down d-flex justify-content-between align-items-center w-100 ${
+                className={`down d-flex justify-content-between align-items-center ${
                     isMobile ? 'flex-wrap' : 'flex-row'
                 }`}
+                style={{
+                    width: '1224px',
+                }}
             >
-                <p className="text-black-50 fw-bold">
+                <p className="text-black-50">
                     &copy; 2023 Destinize. All rights reserved.
                 </p>
                 <div
                     className={`wrapper text-wrap w-75  social d-flex gap-4 justify-content-end `}
                 >
-                    <p className="text-black-50 fw-bold">Facebook</p>
-                    <p className="text-black-50 fw-bold">Instagram</p>
-                    <p className="text-black-50 fw-bold">Twitter</p>
-                    <p className="text-black-50 fw-bold">LinkedIn</p>
+                    <p className="text-black-50">Facebook</p>
+                    <p className="text-black-50">Instagram</p>
+                    <p className="text-black-50">Twitter</p>
+                    <p className="text-black-50">LinkedIn</p>
                 </div>
             </div>
         </div>

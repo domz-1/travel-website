@@ -11,7 +11,7 @@ const MapDownSection = () => {
         <div
             className={`d-flex ${
                 isMobile ? 'flex-column' : 'flex-row'
-            } justify-content-between align-items-center gap-3 `}
+            } justify-content-between  gap-3 `}
         >
             <MapFeature
                 svg={<FmdGoodRoundedIcon />}

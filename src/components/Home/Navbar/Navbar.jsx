@@ -151,14 +151,25 @@ const Navbar = () => {
                                         flexDirection: 'row',
                                     }}
                                 >
-                                    <LanguageIcon />
+                                    <LanguageIcon
+                                        sx={{
+                                            width: 20,
+                                            height: 20,
+                                        }}
+                                    />
                                     <Typography variant="subtitle2">
                                         Bahasa Indonesia
                                     </Typography>
                                     <ArrowDropDownRoundedIcon />
                                 </div>
                                 <div className="location">
-                                    <LocationOnIcon />
+                                    <LocationOnIcon
+                                        className="location-icon d-flex text-center"
+                                        sx={{
+                                            width: '48px',
+                                            height: '48px',
+                                        }}
+                                    />
                                     <div className="sub-text">
                                         <Typography variant="subtitle2">
                                             Lokasi

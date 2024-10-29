@@ -10,7 +10,7 @@ const CardComment = (props) => {
             className="comment-card d-flex flex-column justify-content-evenly align-items-center shadow-lg rounded-3 p-3"
             style={{
                 flexShrink: '1',
-                width: isMobile ? '300px' : '400px',
+                width: isMobile ? '300px' : '366px',
                 minHeight: '450px',
                 padding: '20px',
                 backgroundColor: '#fff',

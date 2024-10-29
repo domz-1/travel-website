@@ -11,10 +11,10 @@ const Reserv = () => {
         <div
             className={`d-flex ${
                 isMobile ? 'flex-column-reverse' : 'flex-row'
-            } justify-content-center align-items-center gap-3 w-100 h-auto`}
+            } justify-content-center align-items-center gap-0  h-auto `}
         >
             <div
-                className={`w-100 d-flex flex-column justify-content-center ${
+                className={` d-flex flex-column justify-content-center revers ${
                     isMobile ? 'align-items-center' : ''
                 }`}
             >

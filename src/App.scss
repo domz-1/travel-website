@@ -43,7 +43,7 @@ $breakpoint-xl: 1536px;
 .linkandarrow {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     color: #9A9EA6;
     flex-direction: row;
 }
@@ -172,7 +172,7 @@ $breakpoint-xl: 1536px;
     .links {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 40px;
 
         @include md {
             flex-direction: column;
@@ -187,23 +187,48 @@ $breakpoint-xl: 1536px;
 
 
         .person {
-
-            padding: 5px !important;
-            width: 30px;
-            height: 30px;
+            padding: 12px !important;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
             background-color: #E3EBFD;
             color: #4475F2;
             border-radius: 50%;
         }
 
         .shop {
-            padding: 5px !important;
-            width: 30px;
-            height: 30px;
+            padding: 12px !important;
+            width: 48px;
+            height: 48px;
+            font-size: 20px;
             background-color: #4475F2;
             color: white;
             border-radius: 50%;
         }
+    }
+}
+
+svg.location-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+
+    path {
+        translate: 10% 10%;
+        scale: .8;
+    }
+}
+
+svg.playback {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+
+    path {
+        translate: 18% 20%;
+        scale: .6;
     }
 }
 
@@ -238,7 +263,6 @@ $breakpoint-xl: 1536px;
 .chip {
     color: #4475F2 !important;
     background-color: #E3EBFD !important;
-    padding: 10px !important;
 }
 
 .landing-wrapper {
@@ -275,10 +299,12 @@ $breakpoint-xl: 1536px;
     flex-direction: row;
     gap: 30px !important;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 60px !important;
     margin-bottom: 50px !important;
     min-height: 100px;
+
+
 
     @include md {
         margin-top: 70px;
@@ -287,19 +313,21 @@ $breakpoint-xl: 1536px;
         gap: 15px;
     }
 
-    img.photo-gray {
-        // max-height: 100px;
-        scale: 1;
-        filter: grayscale(10);
-        filter: drop-shadow(0 0 30px #333), grayscale(10);
+    .photo-gray {
+        transform: scale(0.9);
+        /* Using transform instead of scale property */
+        filter: grayscale(100%);
+        transition: transform 0.3s ease-in-out,
+            filter 0.3s ease-in-out,
+            box-shadow 0.3s ease-in-out;
 
-    }
-
-    img.photo-normal {
-        max-height: 100px;
-        scale: .9;
-        filter: drop-shadow(0 0 30px #33333317);
-
+        &:hover {
+            transform: scale(1);
+            /* Using transform instead of scale */
+            cursor: pointer;
+            filter: grayscale(0%) brightness(1.2);
+            box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.05);
+        }
     }
 }
 
@@ -342,21 +370,19 @@ $breakpoint-xl: 1536px;
     }
 
     .img {
-        border-radius: 20px;
+        border-radius: 6px;
         object-fit: cover;
         width: 278.46px;
         height: 392.36px;
     }
 
     .sub-text {
-
-
         p {
             font-size: 17px;
             padding-left: 10px !important;
 
             &.two {
-                color: #9A9EA6;
+                color: #80918E;
             }
 
             &.one {
@@ -384,9 +410,9 @@ $breakpoint-xl: 1536px;
             margin-top: 10px;
         }
 
-        background-color: #ffffffaf;
+        background-color: rgba(255, 255, 255, 0.7);
         color: black;
-        border-radius: 0 12px 0 0;
+        border-radius: 0 6px 0 0;
     }
 }
 
@@ -443,6 +469,19 @@ $breakpoint-xl: 1536px;
 
         @include md {
             padding-left: 30px !important;
+        }
+    }
+}
+
+.revers {
+    max-width: 548px !important;
+}
+
+.map-feature {
+    svg {
+        path {
+            width: 24px;
+            height: 24px;
         }
     }
 }

@@ -16,16 +16,14 @@ const NavDown = () => {
             }}
         >
             <div className="links">
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
-                <LinkWithArrow title="lorem" />
+                <LinkWithArrow title="Gunung" />
+                <LinkWithArrow title="Pantai" />
+                <LinkWithArrow title="Kuliner" />
+                <LinkWithArrow title="Outbond" />
+                <LinkWithArrow title="Sejarah" />
+                <LinkWithArrow title="Edukasi" />
+                <LinkWithArrow title="Romantis" />
+                <LinkWithArrow title="Alam" />
             </div>
             <div className="btns">
                 <ShoppingCartRoundedIcon className="shop" />
