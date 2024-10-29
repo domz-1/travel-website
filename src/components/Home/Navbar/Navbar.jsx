@@ -45,33 +45,37 @@ const Navbar = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 paddingTop: '20px',
+                gap: '20px',
             }}
+            className="d-flex flex-column justify-content-center align-items-center"
         >
             <ListItem>
-                <div className="Search" sx={{ width: '100%' }}>
-                    <input
-                        type="search"
-                        name=""
-                        id=""
-                        placeholder="Search"
-                        className="search-input"
-                        style={{
-                            width: '100%',
-                            borderRadius: '5px',
-                            padding: '10px',
-                            border: '1px solid #E0E0E0',
-                        }}
-                    />
-                </div>
+                <input
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Search"
+                    className="drawer-search"
+                    style={{
+                        width: '100%',
+                        borderRadius: '5px',
+                        padding: '10px',
+                        border: '1px solid #E0E0E0',
+                        paddingLeft: '10px',
+                        outline: 'none',
+                        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+                    }}
+                />
             </ListItem>
             <ListItem>
                 <ListItemIcon>
                     <LanguageIcon />
                 </ListItemIcon>
-                <ListItemText
-                    primary="Bahasa Indonesia"
-                    secondary={<ArrowDropDownRoundedIcon />}
-                />
+                <div className="d-flex flex-row gap2">
+                    <p>Bahasa Indonesia</p>
+                    <p></p>
+                    <ArrowDropDownRoundedIcon />
+                </div>
             </ListItem>
             <ListItem>
                 <ListItemIcon>
@@ -119,6 +123,7 @@ const Navbar = () => {
                     >
                         <div className="logo">
                             <img
+                                className={`${isMobile ? 'ms-2' : ''}`}
                                 src={Logo}
                                 alt="Destinize"
                                 width="119px"
@@ -169,6 +174,7 @@ const Navbar = () => {
 
                         {isMobile && (
                             <IconButton
+                                className={`${isMobile ? 'me-2' : ''}`}
                                 edge="start"
                                 color="inherit"
                                 aria-label="menu"

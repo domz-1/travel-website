@@ -7,7 +7,7 @@ const Map = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div className="d-flex flex-column gap-4 mb-5 justify-content-center align-content-center">
+        <div className="d-flex flex-column gap-4 mb-5 justify-content-center align-content-center mx-5">
             <p
                 className="px-2 fw-bold text-center"
                 style={{
@@ -21,12 +21,12 @@ const Map = () => {
                     color: '#14183E',
                     fontWeight: 'bold',
                 }}
-                className="fw-bold text-wrap text-center"
+                className="fw-bold text-wrap text-center px-2"
             >
                 <Emoji name="world-map" className="section-emoji" /> • Cari
                 Tempat Wisata Didekatmu
             </h1>
-            <p className="text-center text-wrap">
+            <p className="text-center text-wrap px-2">
                 Fitur ini memungkinkan kamu untuk mencari tempat wisata atau
                 tempat yang sedang populer <br />
                 di daerah kamu dengan begitu kamu akan selalu update dan gak
@@ -35,7 +35,7 @@ const Map = () => {
             <img
                 src={MapImg}
                 alt="map"
-                className="flex-shrink-1"
+                className="flex-shrink-1 "
                 style={{
                     maxWidth: '100%',
                     height: isMobile ? '200px' : 'auto',
@@ -44,7 +44,6 @@ const Map = () => {
                     border: '1px solid #F0F0F0',
                     boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.1)',
                     marginBottom: '20px',
-                    margin: 'auto',
                 }}
             />
             <MapDownSection />

@@ -24,9 +24,13 @@ const LandingPageText = () => {
         >
             <Chip
                 label={`🛫• Explore the wonderful indonesia!`}
-                className={`chip1 ${isMobile ? 'w-75' : 'w-50'}`}
+                className={`chip1 fw-bold ${isMobile ? 'w-75' : 'w-50'}`}
                 variant="filled"
                 size="medium"
+                style={{
+                    backgroundColor: '#E5EDFF',
+                    color: '#4F7DF3',
+                }}
             />
             <Typography
                 variant="h2"
@@ -76,7 +80,11 @@ const LandingPageText = () => {
                     }}
                 />
             </Typography>
-            <div className="landing-btns">
+            <div
+                className={`${
+                    isMobile ? 'd-flex flex-column-reverse' : 'd-flex flex-row'
+                } landing-btns`}
+            >
                 <Button
                     sx={{
                         bgcolor: '#4475F2',
@@ -106,7 +114,6 @@ const LandingPageText = () => {
                             height: '50px',
                             borderRadius: '50%',
                             outline: '1px solid #4475F2',
-                            // padding: '5px',
                             boxShadow: '1px 1px 10px 1px #4475F2',
                         }}
                     />

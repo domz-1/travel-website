@@ -7,7 +7,7 @@ const Emotion = (props) => {
     return (
         <div
             className={`d-flex flex-row 
-                ${isMobile ? 'w-100' : 'w-75'} align-items-center my-5`}
+                ${isMobile ? 'w-75' : 'w-75'} align-items-center my-5`}
         >
             <p
                 className="rounded-3 shadow-sm"

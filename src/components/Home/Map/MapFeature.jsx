@@ -1,6 +1,6 @@
 const MapFeature = (props) => {
     return (
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row w-100 mx-2">
             <div
                 className="text-center align-self-center mx-2 "
                 style={{

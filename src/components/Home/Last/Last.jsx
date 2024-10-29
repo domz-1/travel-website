@@ -8,8 +8,8 @@ const Last = () => {
     const isSMobile = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <div
-            className={`w-100 d-flex ${
-                isMobile ? 'flex-column-reverse' : 'flex-row'
+            className={` d-flex ${
+                isMobile ? 'flex-column-reverse mx-5 w-75' : 'w-100 flex-row'
             } rounded-4 justify-content-between my-5`}
             style={{
                 backgroundColor: '#4372EB',

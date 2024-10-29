@@ -13,7 +13,11 @@ const Reserv = () => {
                 isMobile ? 'flex-column-reverse' : 'flex-row'
             } justify-content-center align-items-center gap-3 w-100 h-auto`}
         >
-            <div className="w-100">
+            <div
+                className={`w-100 d-flex flex-column justify-content-center ${
+                    isMobile ? 'align-items-center' : ''
+                }`}
+            >
                 <p
                     className="px-2 fw-bold"
                     style={{
@@ -29,7 +33,7 @@ const Reserv = () => {
                     }}
                     className="fw-bold text-wrap w-75"
                 >
-                    Gak mau ngantri? Reservasi aja!{' '}
+                    Gak mau ngantri? Reservasi aja!
                     <Emoji
                         name="call-me-hand-light-skin-tone"
                         className="section-emoji"
@@ -51,11 +55,7 @@ const Reserv = () => {
                     title="Tinggal masuk dan enjoy!"
                 />
             </div>
-            <img
-                src={Photo}
-                alt="photo-playback"
-                className="man-landing-photo flex-shrink-1"
-            />
+            <img src={Photo} alt="photo-playback" className="photo-playback" />
         </div>
     );
 };

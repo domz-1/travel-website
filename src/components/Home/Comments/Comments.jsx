@@ -3,7 +3,7 @@ import { Emoji } from 'react-apple-emojis';
 
 const Comments = () => {
     return (
-        <div className="d-flex flex-column gap-4 my-5 align-items-center justify-content-center">
+        <div className="d-flex flex-column gap-4 my-5 align-items-center justify-content-center mx-5">
             <p
                 className="px-2 fw-bold text-center"
                 style={{
@@ -27,7 +27,9 @@ const Comments = () => {
                 dan website Destinize buat nentuin kemana liburan mereka
                 selanjutnya? Yuk cek dibawah!
             </p>
-            <CommentsWrapper />
+            <div className="mx-2">
+                <CommentsWrapper />
+            </div>
         </div>
     );
 };

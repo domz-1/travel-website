@@ -9,7 +9,11 @@ const Footer = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div className="wrapper pt-5 my-5 ">
+        <div
+            className={`wrapper text-wrap  pt-5 my-5   ${
+                isMobile ? 'flex-column w-75 mx-5' : 'flex-row w-100'
+            }`}
+        >
             <img src={icon} alt="" className="my-3" />
             <div
                 className={`d-flex ${
@@ -79,11 +83,17 @@ const Footer = () => {
                 </div>
             </div>
             <br />
-            <div className="down d-flex justify-content-between">
+            <div
+                className={`down d-flex justify-content-between align-items-center w-100 ${
+                    isMobile ? 'flex-wrap' : 'flex-row'
+                }`}
+            >
                 <p className="text-black-50 fw-bold">
                     &copy; 2023 Destinize. All rights reserved.
                 </p>
-                <div className="social d-flex gap-4">
+                <div
+                    className={`wrapper text-wrap w-75  social d-flex gap-4 justify-content-end `}
+                >
                     <p className="text-black-50 fw-bold">Facebook</p>
                     <p className="text-black-50 fw-bold">Instagram</p>
                     <p className="text-black-50 fw-bold">Twitter</p>
