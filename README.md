@@ -1,6 +1,7 @@
 # Destinize Travel Website 🌎✈️
 
-A modern, responsive travel website built with React and Material-UI, featuring a clean design and smooth user experience. View the live demo [here](https://domz-codeclouders1.netlify.app/).
+A modern, responsive travel website built with React and Material-UI,
+featuring a clean design and smooth user experience. View the live demo [here](https://domz-codeclouders1.netlify.app/).
 
 ![preview](https://github.com/user-attachments/assets/f8279b49-587e-4021-9ab7-1e1200eabb16)
 
@@ -82,20 +83,6 @@ npm run build
 yarn build
 ```
 
-## 📁 Project Structure
-
-```
-travel-website/
-├── assets/                  # Static assets and images
-├── components/
-│   └── Home/               # Home page components including Favourite.jsx
-├── pages/                  # Main page components
-├── App.jsx                 # Main application component
-├── App.scss               # Main application styles
-├── index.js               # Entry point
-├── index.scss             # Global styles
-└── main.jsx              # Application initialization
-```
 
 ### Recent Updates
 
