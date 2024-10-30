@@ -3,7 +3,7 @@ import CollapsItems from './CollapsItems';
 import { Emoji } from 'react-apple-emojis';
 const Collapses = () => {
     return (
-        <div className=" section-wrapper py-5 mx-5">
+        <div className=" section-wrapper qfa mx-5">
             <p className="title">FREQUENTLY ASKED QUESTION</p>
             <div className="section-sub">
                 <h1>

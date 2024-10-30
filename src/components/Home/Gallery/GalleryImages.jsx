@@ -9,11 +9,14 @@ const GalleryImages = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     return (
-        <div>
+        <div className="gallery-wrapper">
             <div
                 className={`d-flex ${
                     isMobile ? 'flex-column' : 'flex-row'
-                } w-100 justify-content-between mb-3 gap-5 `}
+                } w-100 justify-content-between `}
+                style={{
+                    gap: '43px',
+                }}
             >
                 <div
                     className={`card shadow-lg `}
@@ -96,11 +99,14 @@ const GalleryImages = () => {
                     <img
                         src={Media2}
                         alt="picture"
-                        className="w-100 h-100 shadow-lg rounded-4"
+                        className="w-100 h-100 shadow-lg"
+                        style={{
+                            borderRadius: '5px',
+                        }}
                     />
 
                     <div
-                        className="text position-absolute ps-5 d-flex flex-column w-100 h-100 justify-content-end p-5"
+                        className="text position-absolute ps-4 pb-4 d-flex flex-column w-100 h-100 justify-content-end"
                         style={{
                             bottom: '0',
                             right: '0',

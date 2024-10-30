@@ -9,10 +9,11 @@ const NavDown = () => {
 
     return (
         <div
-            className="nav-down-wrapper pb-3"
+            className="nav-down-wrapper pb-3 px-5"
             style={{
                 display: 'flex',
-                justifyContent: 'space-between',
+                justifyContent: 'space-evenly',
+                borderTop: '1px solid rgba(223, 223, 224, 1)',
             }}
         >
             <div className="links">

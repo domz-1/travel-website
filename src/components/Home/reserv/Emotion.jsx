@@ -7,36 +7,32 @@ const Emotion = (props) => {
     return (
         <div
             className={`d-flex flex-row 
-                ${isMobile ? 'w-75' : 'w-75'} align-items-center my-5`}
+                align-items-center`}
+            style={{
+                gap: 22.5,
+            }}
         >
-            <p
-                className="rounded-3 shadow-sm"
-                style={{
-                    backgroundColor: '#EFE0B4',
-                    width: '90px',
-                    height: '70px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    fontSize: '24px',
-                    marginLeft: isMobile ? '30px' : '0',
-                }}
-            >
+            <div className="emoji-box">
                 <Emoji
                     name={props.emojiName}
                     style={{
-                        backgroundColor: '#EFE0B4',
-                        width: '30px',
-                        display: 'flex',
-
+                        width: '24px',
                         alignItems: 'center',
                         marginLeft: isMobile ? '30px' : '0',
                     }}
                 />
-            </p>
-            <div className="d-flex flex-column">
-                <p className="px-3 fw-bold">{props.title}</p>
-                <p className="px-3 text-wrap">{props.description}</p>
+            </div>
+
+            <div className="d-flex flex-column w-75">
+                <p style={{ color: 'rgba(94, 98, 130, 1)', fontWeight: 700 }}>
+                    {props.title}
+                </p>
+                <p
+                    className="text-wrap w-75"
+                    style={{ color: 'rgba(94, 98, 130, 1)', fontWeight: 400 }}
+                >
+                    {props.description}
+                </p>
             </div>
         </div>
     );

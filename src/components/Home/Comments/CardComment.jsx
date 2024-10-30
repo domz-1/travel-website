@@ -16,6 +16,7 @@ const CardComment = (props) => {
                 backgroundColor: '#fff',
                 boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
                 borderRadius: '10px',
+                border: '1px solid rgba(222, 222, 222, 1)',
             }}
         >
             <img

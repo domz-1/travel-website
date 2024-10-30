@@ -4,7 +4,7 @@ import { Emoji } from 'react-apple-emojis';
 
 const Favourite = () => {
     return (
-        <div className=" section-wrapper py-5 mx-5">
+        <div className=" section-wrapper fav-sec mx-5">
             <p className="title">DESTINASI FAVORIT</p>
             <div className="section-sub">
                 <h1>

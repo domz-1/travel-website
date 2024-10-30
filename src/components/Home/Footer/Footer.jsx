@@ -25,70 +25,192 @@ const Footer = () => {
             >
                 <div className="right d-flex flex-column gap-4 justify-content-between">
                     <p className="fw-bold text-black">Destinize</p>
-                    <p className="text-black-50">
+                    <p
+                        className="gray-color
+                    "
+                    >
                         Destinize adalah website atau layanan aplikasi yang{' '}
                         <br />
                         membantu kamu memilih atau merekomendasikan tempat yang
                         dijuluki ‘hidden gems’ agar lebih dikenal dan ramai
+                        &nbsp;
                         <span
                             style={{
+                                fontWeight: 700,
+
                                 color: 'rgb(68, 117, 242)',
                             }}
                         >
                             Baca Selengkapnya
                         </span>
                     </p>
-                    <p className="text-black-50">
-                        {' '}
-                        <CallRoundedIcon />
-                        0851-5616-2840
-                    </p>
-                    <p className="text-black-50">
-                        {' '}
-                        <EmailRoundedIcon />
-                        syaokay@gmail.com
-                    </p>
-                    <p className="text-black-50">
-                        {' '}
-                        <LocationOnRoundedIcon />
-                        Ciamis, Jawa Barat. Indonesia
-                    </p>
-                    <p className="text-black-50">
-                        {' '}
-                        <LocalPrintshopRoundedIcon />
-                        +1-212-9876543
-                    </p>
+                    <div className="d-flex flex-column gap-3">
+                        <p
+                            className="gray-color
+                    "
+                        >
+                            <CallRoundedIcon sx={{ width: 20, height: 20 }} />{' '}
+                            &nbsp; 0851-5616-2840
+                        </p>
+                        <p
+                            className="gray-color
+                    "
+                        >
+                            {' '}
+                            <EmailRoundedIcon /> &nbsp; syaokay@gmail.com
+                        </p>
+                        <p
+                            className="gray-color
+                    "
+                        >
+                            {' '}
+                            <LocationOnRoundedIcon /> &nbsp; Ciamis, Jawa Barat.
+                            Indonesia
+                        </p>
+                        <p
+                            className="gray-color
+                    "
+                        >
+                            {' '}
+                            <LocalPrintshopRoundedIcon /> &nbsp; +1-212-9876543
+                        </p>
+                    </div>
                 </div>
                 <div className="left d-flex flex-row justify-content-evenly w-100">
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
-                        <p className="text-black-50">Pekerjaan</p>
-                        <p className="text-black-50">Karir</p>
-                        <p className="text-black-50">Blog</p>
-                        <p className="text-black-50">Tentang Kami</p>
-                        <p className="text-black-50">somp</p>
-                        <p className="text-black-50">Ekd</p>
-                        <p className="text-black-50">Gsio</p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Pekerjaan
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Karir
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Blog
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Tentang Kami
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            somp
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Ekd
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Gsio
+                        </p>
                     </div>
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
-                        <p className="text-black-50">Pekerjaan</p>
-                        <p className="text-black-50">Karir</p>
-                        <p className="text-black-50">Blog</p>
-                        <p className="text-black-50">Tentang Kami</p>
-                        <p className="text-black-50">somp</p>
-                        <p className="text-black-50">Ekd</p>
-                        <p className="text-black-50">Gsio</p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Pekerjaan
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Karir
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Blog
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Tentang Kami
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            somp
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Ekd
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Gsio
+                        </p>
                     </div>
                     <div className="one d-flex flex-column gap-2">
                         <p className="fw-bold text-black">Tentang</p>
-                        <p className="text-black-50">Pekerjaan</p>
-                        <p className="text-black-50">Karir</p>
-                        <p className="text-black-50">Blog</p>
-                        <p className="text-black-50">Tentang Kami</p>
-                        <p className="text-black-50">somp</p>
-                        <p className="text-black-50">Ekd</p>
-                        <p className="text-black-50">Gsio</p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Pekerjaan
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Karir
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Blog
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Tentang Kami
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            somp
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Ekd
+                        </p>
+                        <p
+                            className="gray-color
+                        "
+                        >
+                            Gsio
+                        </p>
                     </div>
                 </div>
             </div>
@@ -101,16 +223,39 @@ const Footer = () => {
                     width: '1224px',
                 }}
             >
-                <p className="text-black-50">
+                <p
+                    className="gray-color
+                "
+                >
                     &copy; 2023 Destinize. All rights reserved.
                 </p>
                 <div
                     className={`wrapper text-wrap w-75  social d-flex gap-4 justify-content-end `}
                 >
-                    <p className="text-black-50">Facebook</p>
-                    <p className="text-black-50">Instagram</p>
-                    <p className="text-black-50">Twitter</p>
-                    <p className="text-black-50">LinkedIn</p>
+                    <p
+                        className="gray-color
+                    "
+                    >
+                        Facebook
+                    </p>
+                    <p
+                        className="gray-color
+                    "
+                    >
+                        Instagram
+                    </p>
+                    <p
+                        className="gray-color
+                    "
+                    >
+                        Twitter
+                    </p>
+                    <p
+                        className="gray-color
+                    "
+                    >
+                        LinkedIn
+                    </p>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import GalleryImages from './GalleryImages';
 import { Emoji } from 'react-apple-emojis';
 const Gallery = () => {
     return (
-        <div className="section-wrapper mx-5">
+        <div className="section-wrapper gallery-section-wrapper mx-5">
             <p className="title">MENGENAL DESTINIZE</p>
             <div className="section-sub">
                 <h1>

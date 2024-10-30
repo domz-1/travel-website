@@ -1,5 +1,6 @@
 import { Emoji } from 'react-apple-emojis';
 import Photo from '../../../assets/Image.png';
+// import Photo2 from '../../../assets/absolute.png';
 import Emotion from './Emotion';
 import { useTheme, useMediaQuery } from '@mui/material';
 
@@ -11,7 +12,7 @@ const Reserv = () => {
         <div
             className={`d-flex ${
                 isMobile ? 'flex-column-reverse' : 'flex-row'
-            } justify-content-center align-items-center gap-0  h-auto `}
+            } justify-content-around align-items-center reserv-section-wrapper`}
         >
             <div
                 className={` d-flex flex-column justify-content-center revers ${
@@ -28,7 +29,7 @@ const Reserv = () => {
                 </p>
                 <h1
                     style={{
-                        color: '#14183E',
+                        color: 'rgba(20, 24, 62, 1)',
                         fontWeight: 'bold',
                     }}
                     className="fw-bold text-wrap w-75"
@@ -39,23 +40,36 @@ const Reserv = () => {
                         className="section-emoji"
                     />
                 </h1>
-                <Emotion
-                    emojiName="magnifying-glass-tilted-left"
-                    description="Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize"
-                    title="Cari tempat yang kamu mau"
-                />
-                <Emotion
-                    emojiName="pencil"
-                    description="Tulis dan lengkapi data kamu untuk keperluan data booking"
-                    title="Isi data dan konfirmasi pembayaran"
-                />
-                <Emotion
-                    emojiName="smiling-face-with-heart-eyes"
-                    description="Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan"
-                    title="Tinggal masuk dan enjoy!"
+                <div
+                    className="d-flex flex-column mt-5"
+                    style={{
+                        gap: '3rem',
+                    }}
+                >
+                    <Emotion
+                        emojiName="magnifying-glass-tilted-left"
+                        description="Temukan destinasi selanjutnya yang akan kamu kunjungi dengan Destinize"
+                        title="Cari tempat yang kamu mau"
+                    />
+                    <Emotion
+                        emojiName="pencil"
+                        description="Tulis dan lengkapi data kamu untuk keperluan data booking"
+                        title="Isi data dan konfirmasi pembayaran"
+                    />
+                    <Emotion
+                        emojiName="smiling-face-with-heart-eyes"
+                        description="Kamu bisa langsung masuk dan enjoy liburan kamu tanpa hambatan"
+                        title="Tinggal masuk dan enjoy!"
+                    />
+                </div>
+            </div>
+            <div>
+                <img
+                    src={Photo}
+                    alt="photo-playback"
+                    className="photo-playback"
                 />
             </div>
-            <img src={Photo} alt="photo-playback" className="photo-playback" />
         </div>
     );
 };

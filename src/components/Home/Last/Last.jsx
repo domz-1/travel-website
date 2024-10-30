@@ -10,7 +10,7 @@ const Last = () => {
         <div
             className={` d-flex mx-5  ${
                 isMobile ? 'flex-column-reverse w-75' : ' flex-row'
-            } rounded-4 justify-content-between my-5`}
+            } rounded-4 justify-content-between qfa`}
             style={{
                 backgroundColor: '#4372EB',
                 height: isMobile ? 'auto' : '378px',

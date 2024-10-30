@@ -34,6 +34,7 @@ const MapFeature = (props) => {
                     className="fw-bold"
                     style={{
                         fontSize: '22px',
+                        color: 'rgba(24, 33, 77, 1)',
                     }}
                 >
                     {props.title}

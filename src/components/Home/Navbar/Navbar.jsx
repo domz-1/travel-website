@@ -99,31 +99,29 @@ const Navbar = () => {
         <>
             <Container className="container">
                 <AppBar
-                    className="appbar shadow-sm"
+                    className="appbar "
                     sx={{
                         boxShadow: 'none',
                     }}
                 >
                     <Stack
-                        className="up"
+                        className="up px-5"
                         direction="row"
                         sx={{
-                            boxShadow: 'none',
                             display: 'flex',
-                            justifyContent: isMobile
-                                ? 'space-between'
-                                : 'space-around',
+                            justifyContent: 'center',
                             alignItems: 'center',
                             width: '100%',
                             height: '72px',
                             bgcolor: '#fff',
                             color: 'black',
                             padding: isMobile ? '0 16px' : '0',
+                            gap: '80px',
                         }}
                     >
                         <div className="logo">
                             <img
-                                className={`${isMobile ? 'ms-2' : ''}`}
+                                className={`${isMobile ? 'ms-2' : 'ms-5'}`}
                                 src={Logo}
                                 alt="Destinize"
                                 width="119px"
