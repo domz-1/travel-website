@@ -40,6 +40,10 @@ $breakpoint-xl: 1536px;
     }
 }
 
+.home {
+    // width: 90% !important;
+}
+
 .linkandarrow {
     display: flex;
     align-items: center;
@@ -87,7 +91,7 @@ $breakpoint-xl: 1536px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 0px !important;
 
         svg {
             color: #9A9EA6;

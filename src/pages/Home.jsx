@@ -12,7 +12,7 @@ import Footer from '../components/Home/Footer/Footer';
 
 const Home = () => {
     return (
-        <div className="home container flex-column justify-center">
+        <div className="home container  flex-column ">
             <Navbar />
             <LandingPage />
             <Sponsors />

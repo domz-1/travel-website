@@ -116,7 +116,7 @@ const Navbar = () => {
                             bgcolor: '#fff',
                             color: 'black',
                             padding: isMobile ? '0 16px' : '0',
-                            gap: '80px',
+                            gap: '40px',
                         }}
                     >
                         <div className="logo">
@@ -147,6 +147,7 @@ const Navbar = () => {
                                         justifyContent: 'space-around',
                                         alignItems: 'center',
                                         flexDirection: 'row',
+                                        width: '240px',
                                     }}
                                 >
                                     <LanguageIcon
