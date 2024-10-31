@@ -120,7 +120,8 @@ const LandingPageText = () => {
                             height: '50px',
                             borderRadius: '50%',
                             outline: '1px solid #4475F2',
-                            boxShadow: '0px 15px 20px 0px #4475F233',
+                            boxShadow:
+                                '0px 15px 20px 0px rgba(68, 117, 242, 0.2)',
                         }}
                     />
                     <p className="fw-bold">Putar Demo </p>
