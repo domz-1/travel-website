@@ -1,8 +1,8 @@
 import icon from '../../../assets/icon.png';
-import CallRoundedIcon from '@mui/icons-material/CallRounded';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
-import LocationOnRoundedIcon from '@mui/icons-material/LocationOnRounded';
-import LocalPrintshopRoundedIcon from '@mui/icons-material/LocalPrintshopRounded';
+import { CiPhone } from 'react-icons/ci';
+import { CiMail } from 'react-icons/ci';
+import { SlLocationPin } from 'react-icons/sl';
+import { BsPrinter } from 'react-icons/bs';
 import { useTheme, useMediaQuery } from '@mui/material';
 
 const Footer = () => {
@@ -23,48 +23,50 @@ const Footer = () => {
                     isMobile ? 'flex-column' : 'flex-row'
                 } justify-content-between gap-4`}
             >
-                <div className="right d-flex flex-column gap-4 justify-content-between">
-                    <p className="fw-bold text-black">Destinize</p>
-                    <p
-                        className="gray-color
+                <div className="right d-flex flex-column gap-3  justify-content-around ">
+                    <div className="gap-16">
+                        <p className="fw-bold text-black ">Destinize</p>
+                        <p
+                            className="gray-color
                     "
-                    >
-                        Destinize adalah website atau layanan aplikasi yang{' '}
-                        <br />
-                        membantu kamu memilih atau merekomendasikan tempat yang
-                        dijuluki ‘hidden gems’ agar lebih dikenal dan ramai
-                        &nbsp;
-                        <span
-                            style={{
-                                fontWeight: 700,
-
-                                color: 'rgb(68, 117, 242)',
-                            }}
                         >
-                            Baca Selengkapnya
-                        </span>
-                    </p>
+                            Destinize adalah website atau layanan aplikasi yang
+                            <br />
+                            membantu kamu memilih atau merekomendasikan <br />
+                            tempat yang dijuluki ‘hidden gems’ agar lebih
+                            dikenal dan ramai &nbsp;
+                            <span
+                                style={{
+                                    fontWeight: 700,
+
+                                    color: 'rgb(68, 117, 242)',
+                                }}
+                            >
+                                Baca Selengkapnya
+                            </span>
+                        </p>
+                    </div>
                     <div className="d-flex flex-column gap-3">
                         <p
                             className="gray-color
                     "
                         >
-                            <CallRoundedIcon sx={{ width: 20, height: 20 }} />{' '}
-                            &nbsp; 0851-5616-2840
+                            <CiPhone style={{ width: 20, height: 20 }} /> &nbsp;
+                            0851-5616-2840
                         </p>
                         <p
                             className="gray-color
                     "
                         >
                             {' '}
-                            <EmailRoundedIcon /> &nbsp; syaokay@gmail.com
+                            <CiMail /> &nbsp; syaokay@gmail.com
                         </p>
                         <p
                             className="gray-color
                     "
                         >
                             {' '}
-                            <LocationOnRoundedIcon /> &nbsp; Ciamis, Jawa Barat.
+                            <SlLocationPin /> &nbsp; Ciamis, Jawa Barat.
                             Indonesia
                         </p>
                         <p
@@ -72,12 +74,12 @@ const Footer = () => {
                     "
                         >
                             {' '}
-                            <LocalPrintshopRoundedIcon /> &nbsp; +1-212-9876543
+                            <BsPrinter /> &nbsp; +1-212-9876543
                         </p>
                     </div>
                 </div>
-                <div className="left d-flex flex-row justify-content-evenly w-100">
-                    <div className="one d-flex flex-column gap-2">
+                <div className="left d-flex flex-row justify-content-evenly w-100 gap-5">
+                    <div className="one d-flex flex-column ">
                         <p className="fw-bold text-black">Tentang</p>
                         <p
                             className="gray-color
@@ -122,7 +124,7 @@ const Footer = () => {
                             Gsio
                         </p>
                     </div>
-                    <div className="one d-flex flex-column gap-2">
+                    <div className="one d-flex flex-column ">
                         <p className="fw-bold text-black">Tentang</p>
                         <p
                             className="gray-color
@@ -167,7 +169,7 @@ const Footer = () => {
                             Gsio
                         </p>
                     </div>
-                    <div className="one d-flex flex-column gap-2">
+                    <div className="one d-flex flex-column ">
                         <p className="fw-bold text-black">Tentang</p>
                         <p
                             className="gray-color
@@ -229,32 +231,36 @@ const Footer = () => {
                 >
                     &copy; 2023 Destinize. All rights reserved.
                 </p>
-                <div
-                    className={`wrapper text-wrap w-75  social d-flex gap-4 justify-content-end `}
-                >
+                <div className={`wrapper text-wrap social d-flex `}>
                     <p
                         className="gray-color
                     "
                     >
-                        Facebook
+                        Tentang Kami
                     </p>
                     <p
                         className="gray-color
                     "
                     >
-                        Instagram
+                        Sitemap
                     </p>
                     <p
                         className="gray-color
                     "
                     >
-                        Twitter
+                        Privasi & policy
                     </p>
                     <p
                         className="gray-color
                     "
                     >
-                        LinkedIn
+                        Kontak
+                    </p>
+                    <p
+                        className="gray-color
+                    "
+                    >
+                        Panduan Pengunaan
                     </p>
                 </div>
             </div>

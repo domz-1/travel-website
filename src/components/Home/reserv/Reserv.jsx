@@ -63,12 +63,13 @@ const Reserv = () => {
                     />
                 </div>
             </div>
-            <div>
+            <div className="position-relative">
                 <img
                     src={Photo}
                     alt="photo-playback"
                     className="photo-playback"
                 />
+                <div className="position-absolute circle-shadow"></div>
             </div>
         </div>
     );

@@ -71,7 +71,7 @@ const LandingPageText = () => {
                     fontSize: '1rem',
                     fontWeight: '500',
                 }}
-                className="w-50 text-wrap my-2"
+                className="w-75 text-wrap mt-3"
             >
                 Destinize membuat kamu selalu update terkait tempat liburan baru
                 di Indonesia dengan mengikuti perkembangan para influencer di
@@ -89,6 +89,7 @@ const LandingPageText = () => {
                 } landing-btns`}
             >
                 <Button
+                    className="m-0"
                     sx={{
                         bgcolor: '#4475F2',
                         color: 'white',

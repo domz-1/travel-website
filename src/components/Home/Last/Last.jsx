@@ -18,15 +18,25 @@ const Last = () => {
             }}
         >
             <div
-                className={`text text-white p-5 d-flex flex-column justify-content-around ${
+                className={`text text-white p-5 d-flex flex-column ${
                     isMobile ? 'w-100' : 'w-50'
                 } fw-bold`}
+                style={{
+                    gap: 32,
+                    color: 'rgba(255, 255, 255, 1)',
+                }}
             >
-                <h1>
+                <h1 className="fw-bold">
                     Masih bingung cari tempat yang cocok?{' '}
                     <Emoji name="thinking-face" className="section-emoji" />
                 </h1>
-                <p className="text-white-50">
+                <p
+                    style={{
+                        color: 'rgba(241, 242, 246, 1)',
+                        fontWeight: 400,
+                        fontSize: 18,
+                    }}
+                >
                     Tenang, kami mempunyai fitur rekomendasi yang membantu kamu
                     mencari tempat berlibur yang tepat dengan menjawab
                     pertanyaan yang kami berikan.

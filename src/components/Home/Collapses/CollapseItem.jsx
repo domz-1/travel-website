@@ -30,13 +30,13 @@ const CustomAccordionSummary = styled(AccordionSummary)(({ expanded }) => ({
     backgroundColor: expanded ? 'rgba(235, 235, 235, 1)' : 'white',
     transition: 'background-color 0.3s ease-in-out',
     borderLeft: expanded ? '3px solid  rgba(35, 166, 240, 1)' : null,
-    boxShadow: '10px 10px 10px 10px 20px rgba(191, 191, 191, 0.02)',
     padding: '0 20px',
     '& .MuiTypography-root': {
         fontWeight: 700,
         fontSize: expanded ? 14 : 16,
         color: expanded ? 'rgba(35, 166, 240, 1)' : 'rgba(0, 0, 0, 0.87)',
     },
+    borderRadius: '0px',
 }));
 
 const CollapseItem = ({ title, content, isOpened }) => {
@@ -45,7 +45,15 @@ const CollapseItem = ({ title, content, isOpened }) => {
     const handleToggle = () => setPostState((prev) => !prev);
 
     return (
-        <Accordion expanded={postState} onChange={handleToggle}>
+        <Accordion
+            expanded={postState}
+            onChange={handleToggle}
+            sx={{
+                boxShadow: 'none',
+                border: '1px solid rgba(235, 235, 235, 1)',
+                borderRadius: '0px',
+            }}
+        >
             <CustomAccordionSummary
                 expandIcon={<CustomExpandIcon expanded={postState ? 1 : 0} />}
                 aria-controls="panel1a-content"
@@ -61,7 +69,6 @@ const CollapseItem = ({ title, content, isOpened }) => {
                     backgroundColor: '#EBEBEB',
                     padding: '16px',
                     fontSize: '16px',
-                    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.05)',
                     fontWeight: 500,
                 }}
             >

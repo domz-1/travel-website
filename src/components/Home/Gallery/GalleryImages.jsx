@@ -43,8 +43,7 @@ const GalleryImages = () => {
                             />
                         </p>
                         <p className="fw-bold text-black-50 card-text py-2">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                            Jadi gini gann, anda tau bromo? yaaa gunung kann!
                         </p>
                     </div>
                     <div className="card-body px-3 pb-3">
@@ -52,7 +51,7 @@ const GalleryImages = () => {
                             href="#"
                             className="card-link text-blue text-decoration-none"
                         >
-                            Another link
+                            Baca selengkapnya ..
                         </a>
                     </div>
                 </div>
@@ -115,9 +114,9 @@ const GalleryImages = () => {
                             padding: '10px',
                             borderRadius: '5px',
                             display: 'flex',
-                            cursor: 'pointer',
                             transition: 'background-color 0.3s ease',
                             zIndex: '2',
+                            gap: 15,
                         }}
                     >
                         <p

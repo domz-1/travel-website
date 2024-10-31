@@ -3,18 +3,14 @@ import CollapseItem from './CollapseItem';
 const CollapsItems = () => {
     return (
         <div
-            className="fw-bold"
+            className="fw-bold collapses"
             style={{
                 boxShadow: '0px 2.77px 2.21px 0px rgba(191, 191, 191, 0.02);',
                 boxShadow: '0px 6.65px 5.32px 0px rgba(191, 191, 191, 0.03)',
-
-                // box-shadow: 0px 12.52px 10.02px 0px rgba(191, 191, 191, 0.04);
-
-                // box-shadow: 0px 22.34px 17.87px 0px rgba(191, 191, 191, 0.04);
-
-                // box-shadow: 0px 41.78px 33.42px 0px rgba(191, 191, 191, 0.05);
-
-                // box-shadow: 0px 100px 80px 0px rgba(191, 191, 191, 0.07);
+                boxShadow: '0px 12.52px 10.02px 0px rgba(191, 191, 191, 0.04)',
+                boxShadow: '0px 22.34px 17.87px 0px rgba(191, 191, 191, 0.04)',
+                boxShadow: '0px 41.78px 33.42px 0px rgba(191, 191, 191, 0.05)',
+                boxShadow: '0px 100px 80px 0px rgba(191, 191, 191, 0.07)',
             }}
         >
             <CollapseItem

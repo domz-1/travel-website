@@ -1,6 +1,8 @@
 import { Rating } from '@mui/material';
 import { useState } from 'react';
 import { useTheme, useMediaQuery } from '@mui/material';
+import { PiStarFill } from 'react-icons/pi';
+import { PiStarBold } from 'react-icons/pi';
 const CardComment = (props) => {
     const [rate, setRate] = useState(2);
     const theme = useTheme();
@@ -31,12 +33,17 @@ const CardComment = (props) => {
             />
             <p className="px-3 text-center">{props.comment}</p>
             <Rating
-                name="simple-controlled"
+                name="Az"
                 value={rate}
                 onChange={(event, newValue) => {
                     setRate(newValue);
                 }}
+                icon={<PiStarFill style={{ color: 'rgba(231, 124, 64, 1)' }} />} // Filled star color
+                emptyIcon={
+                    <PiStarBold style={{ color: 'rgba(231, 124, 64, 1)' }} />
+                }
             />
+
             <p
                 style={{
                     fontSize: '14px',

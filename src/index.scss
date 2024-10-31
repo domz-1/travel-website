@@ -7,3 +7,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(227, 235, 253, 1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(68, 117, 242, 1);
+    border-radius: 12px;
+}

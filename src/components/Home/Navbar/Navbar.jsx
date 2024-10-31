@@ -12,14 +12,14 @@ import {
     useMediaQuery,
     useTheme,
 } from '@mui/material';
-import LanguageIcon from '@mui/icons-material/Language';
+import { TfiWorld } from 'react-icons/tfi';
 import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+import { CiSearch } from 'react-icons/ci';
 import { useState } from 'react';
 import Logo from '../../../assets/Logo.png';
 import NavDown from './NavDown';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Navbar = () => {
     const theme = useTheme();
@@ -69,7 +69,7 @@ const Navbar = () => {
             </ListItem>
             <ListItem>
                 <ListItemIcon>
-                    <LanguageIcon />
+                    <TfiWorld />
                 </ListItemIcon>
                 <div className="d-flex flex-row gap2">
                     <p>Bahasa Indonesia</p>
@@ -79,7 +79,7 @@ const Navbar = () => {
             </ListItem>
             <ListItem>
                 <ListItemIcon>
-                    <LocationOnIcon />
+                    <HiOutlineLocationMarker />
                 </ListItemIcon>
                 <ListItemText
                     primary="Lokasi"
@@ -116,12 +116,12 @@ const Navbar = () => {
                             bgcolor: '#fff',
                             color: 'black',
                             padding: isMobile ? '0 16px' : '0',
-                            gap: '40px',
+                            gap: '65px',
                         }}
                     >
                         <div className="logo">
                             <img
-                                className={`${isMobile ? 'ms-2' : 'ms-5'}`}
+                                className={`${isMobile ? 'ms-2' : ''}`}
                                 src={Logo}
                                 alt="Destinize"
                                 width="119px"
@@ -131,40 +131,40 @@ const Navbar = () => {
 
                         {!isMobile && (
                             <>
-                                <div className="Search">
+                                <div className="Search position-relative">
                                     <input
                                         type="search"
                                         name=""
                                         id=""
-                                        placeholder="Search"
+                                        placeholder="Cari apapun disini..."
                                         className="search-input"
                                     />
+                                    <CiSearch className="search-icon position-absolute" />
                                 </div>
                                 <div
                                     className="lang"
                                     style={{
                                         display: 'flex',
-                                        justifyContent: 'space-around',
                                         alignItems: 'center',
                                         flexDirection: 'row',
-                                        width: '240px',
+                                        width: '170px',
                                     }}
                                 >
-                                    <LanguageIcon
+                                    <TfiWorld
                                         sx={{
                                             width: 20,
                                             height: 20,
                                         }}
                                     />
                                     <Typography variant="subtitle2">
-                                        Bahasa Indonesia
+                                        &nbsp; Bahasa Indonesia
                                     </Typography>
                                     <ArrowDropDownRoundedIcon />
                                 </div>
                                 <div className="location">
-                                    <LocationOnIcon
+                                    <HiOutlineLocationMarker
                                         className="location-icon d-flex text-center"
-                                        sx={{
+                                        style={{
                                             width: '48px',
                                             height: '48px',
                                         }}
@@ -174,7 +174,13 @@ const Navbar = () => {
                                             Lokasi
                                         </Typography>
                                         <Stack className="flex-row">
-                                            <span>Indonesia, Yogyakarta</span>
+                                            <span
+                                                style={{
+                                                    fontSize: '16px',
+                                                }}
+                                            >
+                                                Indonesia, Yogyakarta
+                                            </span>
                                             <ArrowDropDownRoundedIcon />
                                         </Stack>
                                     </div>
