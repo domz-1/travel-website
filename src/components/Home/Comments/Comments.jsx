@@ -18,7 +18,7 @@ const Comments = () => {
                         color: '#14183E',
                         fontWeight: 'bold',
                     }}
-                    className="fw-bold text-wrap text-center"
+                    className="fw-bold text-wrap text-center bold-title"
                 >
                     <Emoji name="speech-balloon" className="section-emoji" /> •
                     Apa Kata Mereka Tentang Kami

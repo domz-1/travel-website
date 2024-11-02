@@ -10,6 +10,8 @@ $breakpoint-md: 900px;
 $breakpoint-lg: 1200px;
 $breakpoint-xl: 1536px;
 
+
+
 @mixin xs {
     @media (max-width: #{$breakpoint-xs}) {
         @content;
@@ -137,9 +139,9 @@ $breakpoint-xl: 1536px;
 
                 background-color: #E3EBFD;
                 border-radius: 50%;
-                padding: 2px !important;
-                padding-bottom: 8px !important;
-                padding-top: 8px !important;
+                padding: 5px !important;
+                padding-bottom: 10px !important;
+                padding-top: 10px !important;
                 margin: 5px;
             }
         }
@@ -219,7 +221,7 @@ $breakpoint-xl: 1536px;
         gap: 10px;
 
         .person {
-            padding: 12px !important;
+            padding: 13px !important;
             width: 48px;
             height: 48px;
             font-size: 20px;
@@ -229,7 +231,7 @@ $breakpoint-xl: 1536px;
         }
 
         .shop {
-            padding: 12px !important;
+            padding: 13px !important;
             width: 48px;
             height: 48px;
             font-size: 20px;
@@ -283,7 +285,7 @@ svg.playback {
 .circle-shadow {
     content: "";
     position: absolute;
-    top: 40%;
+    top: 22%;
     left: 35%;
     border-radius: 50%;
     width: 100px;
@@ -481,7 +483,8 @@ svg.playback {
 .section-wrapper {
 
     h1 {
-        font-weight: bold;
+        font-weight: 800;
+        color: rgba(20, 24, 62, 1)
     }
 
     display: flex;
@@ -579,6 +582,7 @@ svg.playback {
 }
 
 .reserv-section-wrapper {
+    margin-top: 153px !important;
     margin-bottom: 135px !important;
 }
 
@@ -645,7 +649,7 @@ svg.playback {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: 660px !important;
+    width: 670px !important;
     gap: 40px;
 }
 
@@ -657,4 +661,10 @@ svg.playback {
     display: flex;
     flex-direction: column;
     gap: 16px !important;
+}
+
+h1.bold-title {
+    font-weight: 800 !important;
+    color: rgba(20, 24, 62, 1) !important;
+    font-size: 42 !important;
 }

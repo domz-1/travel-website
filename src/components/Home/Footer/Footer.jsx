@@ -17,15 +17,25 @@ const Footer = () => {
                 fontWeight: 400,
             }}
         >
-            <img src={icon} alt="" className="my-3" />
             <div
                 className={`d-flex ${
                     isMobile ? 'flex-column' : 'flex-row'
                 } justify-content-between gap-4`}
             >
                 <div className="right d-flex flex-column gap-3  justify-content-around ">
+                    <img
+                        src={icon}
+                        alt=""
+                        className=""
+                        style={{ width: 32, height: 32 }}
+                    />
                     <div className="gap-16">
-                        <p className="fw-bold text-black ">Destinize</p>
+                        <p
+                            className="fw-bold text-black"
+                            style={{ fontSize: '24px' }}
+                        >
+                            Destinize
+                        </p>
                         <p
                             className="gray-color
                     "
@@ -78,7 +88,10 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-                <div className="left d-flex flex-row justify-content-evenly w-100 gap-5">
+                <div
+                    className="left d-flex flex-row justify-content-evenly w-100 gap-5"
+                    style={{ fontSize: 18 }}
+                >
                     <div className="one d-flex flex-column ">
                         <p className="fw-bold text-black">Tentang</p>
                         <p
@@ -231,7 +244,7 @@ const Footer = () => {
                 >
                     &copy; 2023 Destinize. All rights reserved.
                 </p>
-                <div className={`wrapper text-wrap social d-flex `}>
+                <div className={`wrapper text-wrap social d-flex  `}>
                     <p
                         className="gray-color
                     "

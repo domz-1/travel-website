@@ -39,7 +39,7 @@ const LandingPageText = () => {
                 variant="h2"
                 sx={{
                     color: '#181E4B',
-                    fontWeight: 'bold',
+                    fontWeight: '800',
                     fontSize: isMobile ? '2rem' : '76px',
                     textWrap: isMobile && 'wrap',
                 }}
@@ -48,7 +48,7 @@ const LandingPageText = () => {
                 <br />
                 <span
                     style={{
-                        color: '#367cf5',
+                        color: '#4475f2',
                         fontWeight: 'bold',
                         fontSize: isMobile ? '2rem' : '76px',
                     }}

@@ -27,13 +27,7 @@ const Reserv = () => {
                 >
                     RESERVASI TEMPAT
                 </p>
-                <h1
-                    style={{
-                        color: 'rgba(20, 24, 62, 1)',
-                        fontWeight: 'bold',
-                    }}
-                    className="fw-bold text-wrap w-75"
-                >
+                <h1 className="fw-bold text-wrap w-75 bold-title">
                     Gak mau ngantri? Reservasi aja!
                     <Emoji
                         name="call-me-hand-light-skin-tone"

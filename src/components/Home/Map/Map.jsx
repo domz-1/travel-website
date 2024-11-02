@@ -16,14 +16,8 @@ const Map = () => {
             >
                 RESERVASI TEMPAT
             </p>
-            <h1
-                style={{
-                    color: '#14183E',
-                    fontWeight: 'bold',
-                }}
-                className="fw-bold text-wrap text-center px-2"
-            >
-                <Emoji name="world-map" className="section-emoji" /> • Cari
+            <h1 className="fw-bold text-wrap text-center px-2 bold-title ">
+                <Emoji name="world-map" className="section-emoji" />• Cari
                 Tempat Wisata Didekatmu
             </h1>
             <p className="text-center text-wrap px-2">
