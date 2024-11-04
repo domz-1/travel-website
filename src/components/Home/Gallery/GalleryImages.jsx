@@ -139,15 +139,15 @@ const GalleryImages = () => {
                             }}
                         >
                             Lidah melepuh? why nott, kawah bukan untuk dilihat
-                            kawan.. tapi untuk di minum.. rasakan kepanasan yang
-                            brutal{' '}
+                            kawan.. tapi untuk di minum.. rasakan <br />
+                            kepanasan yang brutal
                             <Emoji
                                 name="fire"
                                 size="24px"
                                 style={{ width: '16px' }}
                             />
                         </p>
-                        <div className="d-flex flex-row gap-5 mt-3">
+                        <div className="d-flex flex-row gap-5">
                             <p>Baru</p>
                             <p>Trending</p>
                             <p>Google</p>

@@ -551,6 +551,7 @@ svg.playback {
 .gray-color {
     color: rgba(154, 158, 166, 1);
     font-weight: 400;
+    font-size: 14px !important;
 }
 
 .my-25 {
@@ -632,17 +633,11 @@ svg.playback {
 
 .comment-card {
     box-shadow: 0px 2.77px 2.21px 0px rgba(0, 0, 0, 0.0197);
-
     box-shadow: 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.0283);
-
     box-shadow: 0px 12.52px 10.02px 0px rgba(0, 0, 0, 0.035);
-
     box-shadow: 0px 22.34px 17.87px 0px rgba(0, 0, 0, 0.0417);
-
     box-shadow: 0px 41.78px 33.42px 0px rgba(0, 0, 0, 0.0503);
-
     box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
-
 }
 
 .social {
@@ -667,4 +662,22 @@ h1.bold-title {
     font-weight: 800 !important;
     color: rgba(20, 24, 62, 1) !important;
     font-size: 42 !important;
+}
+
+.down {
+    width: 1300px !important;
+
+    .social {
+        width: 50% !important;
+        gap: 40px;
+    }
+}
+
+.left {
+    margin-right: 100px !important;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
 }

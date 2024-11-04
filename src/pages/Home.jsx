@@ -8,7 +8,7 @@ import Gallery from '../components/Home/Gallery/Gallery';
 import Comments from '../components/Home/Comments/Comments';
 import Collapses from '../components/Home/Collapses/Collapses';
 import Last from '../components/Home/Last/Last';
-import Footer from '../components/Home/Footer/Footer';
+import Footer from '../components/Home/Footer/Footer.jsx';
 
 const Home = () => {
     return (
